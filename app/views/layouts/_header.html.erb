@@ -1,0 +1,27 @@
+
+<%# navigation styled for Bootstrap 3.0 %>
+<div class="top-bar" data-topbar role="navigation">
+  <div class="main_container">
+    <div class="wrapper">
+      <div class="logo">
+        <%= link_to root_path do%>
+          <%= image_tag("http://cdn.mysitemyway.com/etc-mysitemyway/icons/legacy-previews/icons-256/blue-metallic-orbs-icons-transport-travel/037591-blue-metallic-orb-icon-transport-travel-transportation-car3.png", options={:alt=>"cab service"}) %>
+        <%end%>
+      </div>
+      <div class="header_login_detail">
+        <%= link_to "Customer Login",new_user_session_path(role: "c") %>
+        <%= link_to "Customer Registration",new_user_registration_path(role: "c") %>
+        <%= link_to "Driver Login",new_user_session_path(role: "d") %>
+      </div>
+      <nav class="navigation">
+        <ul class="nav leftalign" style="color:red;background-color: #003F6E;">
+          <li><%= link_to "Find Cab", "#"%></li>
+          <li><%= link_to "Contact Us", "#"%></li>
+          <li class="select"><%= link_to "About Us", "#"%></li>
+          <li class="select"><%= link_to "How it Work", "#"%></li>
+          <li class="select"><%= link_to "Partners", "#"%></li>
+        </ul>
+      </nav>
+  </div>
+  </div>
+</div>

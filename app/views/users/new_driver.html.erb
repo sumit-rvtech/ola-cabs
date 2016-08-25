@@ -1,0 +1,7 @@
+<%= react_component 'Driver', { drivers: @driver, cab_type: Constants::CAB_TYPE.collect{|key,value| [value,key]} } %>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('body').css('background-image', 'none');
+	});
+</script>
