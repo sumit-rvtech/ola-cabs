@@ -16,4 +16,6 @@ class User < ApplicationRecord
 	validates_presence_of :first_name, :last_name
 	validates_presence_of :mobile, :unless => :admin?
 	validates_presence_of :vehicle_number, :cab_type, :if => :driver?
+	validates_uniqueness_of :vehicle_number, :mobile
+	has_many :locations
 end

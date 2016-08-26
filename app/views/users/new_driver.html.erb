@@ -1,4 +1,4 @@
-<%= react_component 'Driver', { drivers: @driver, cab_type: Constants::CAB_TYPE.collect{|key,value| [value,key]} } %>
+<%= react_component 'Driver', { driver: @driver, cab_type: Constants::CAB_TYPE.collect{|key,value| [value,key]} } %>
 
 <script type="text/javascript">
 	$(document).ready(function(){

@@ -13,8 +13,8 @@ class Drivers extends React.Component {
 			vehicle_number: "",
 			role: "driver"
 		}
-		debugger
-		this.addRecord = this.addDriver.bind(this)
+		this.addRecord = this.addDriver.bind(this);
+		this.handleHire = this.addDriver.bind(this);
 	}
 
 	componentWillMount () {
@@ -23,7 +23,6 @@ class Drivers extends React.Component {
 	}
 
 	addDriver (driver) {
-		debugger;
 		var drivers;
 		drivers = this.state.drivers;
 		if(driver){
@@ -33,16 +32,19 @@ class Drivers extends React.Component {
 	}
 
 	render () {
-		var drivers = this.props.drivers.map(function(driver) {
-			return <Driver key={driver.id} driver={driver} />;
-		});
+		var drivers;
+		if(this.props.drivers.length){
+			drivers= this.props.drivers.map(function(driver) {
+				return <Driver key={driver.id} driver={driver} handleNewHire ={this.handleHire} />;
+			});
+		}
+		else{
+			drivers= "No Driver Found"
+		}
 		return (
-			<div>
-				<h2>Records</h2>
-				<hr />
-				<DriverForm handleNewRecord={this.addRecord} cab_type={this.props.cab_type} />
-				<table className="table table-bordered">
-					<thead>
+			<div className="table-responsive">
+				<table className="table table-bordered table-hover table-inverse">
+					<thead className="thead-inverse">
 						<tr>
 							<th>First Name</th>
 							<th>Last Name</th>
@@ -50,6 +52,7 @@ class Drivers extends React.Component {
 							<th>Number</th>
 							<th>Cab Type</th>
 							<th>Vehicle Number</th>
+							<th></th>
 						</tr>
 					</thead>
 					<tbody>

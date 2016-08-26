@@ -5,6 +5,22 @@ class UsersController < ApplicationController
 	end
 
 	def drivers
-		@drivers = User.drivers
+		if params.has_key?(:drivers)
+			@drivers = User.drivers.where(id: params[:drivers])
+		else
+			@drivers = User.drivers
+		end
+		respond_to do |format|
+			format.html
+			format.json { render json: @drivers }
+		end
+	end
+
+	def search_drivers
+		@drivers = Location.near(params[:search][:source],5).latest.collect{|u| u.user }
+		respond_to do |format|
+			format.html
+			format.json { render json: { drivers: @drivers.collect(&:id),"redirect":true,"redirect_url": drivers_path }}
+		end
 	end
 end

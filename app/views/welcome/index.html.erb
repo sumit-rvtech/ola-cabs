@@ -1,20 +1,3 @@
-<div class="container-fluid">
-	<div class="row">
-		<div class="choose_pick">
-			<div>
-				<%= form_tag root_path, :method => 'get' do %>
-				  <p>
-				  	<%= text_field_tag :location, '',placeholder: "Enter Pickup location"%>
-				  	<%= text_field_tag :location1, '',placeholder: "Enter Drop location"%>
+<%= react_component 'SearchDriver', { cab_type: Constants::CAB_TYPE, persons: Constants::PERSONS  } %>
 
-				  	<%#= select_tag "cab type", options_from_collection_for_select(Constants::CAB_TYPE, "id", "name"), include_blank: true %>
-				  	<%#debugger%>
-				  	<%= select_tag 'cab type', options_for_select(Constants::CAB_TYPE.collect{|key,value| [value,key]}, prompt: "Cab Type") %>
-				  	<%= select_tag 'No. of Persons', options_for_select(Constants::PERSONS, prompt: "No. of Persons") %>
-				    <%= submit_tag "Search", :name => nil %>
-				  </p>
-				<% end %>
-			</div>
-		</div>
-	</div>
-</div>
+<%#= react_component 'Driver', { driver: @driver, cab_type: Constants::CAB_TYPE.collect{|key,value| [value,key]} } %>

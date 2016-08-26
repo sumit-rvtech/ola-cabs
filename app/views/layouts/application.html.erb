@@ -7,8 +7,16 @@
     <title><%= content_for?(:title) ? yield(:title) : "Untitled" %></title>
 
     <%= stylesheet_link_tag    "application" %>
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places&sensor=false"></script>
+
     <%= javascript_include_tag "application", 'data-turbolinks-track' => true %>
     <%= csrf_meta_tags %>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('#source').geocomplete();
+        $('#destination').geocomplete();
+      });
+    </script>
   </head>
 
   <body>
@@ -16,8 +24,12 @@
       <%= render 'layouts/header' %>
     </header>
     <div class="container body-content">
-      <%= yield %>
+      <div class="interal_div">
+        <div class="choose_pick">
+          <%= yield %>
+        </div>
+      </div>
     </div>
-      <%= render 'layouts/footer' %>
+      <%#= render 'layouts/footer' %>
   </body>
 </html>

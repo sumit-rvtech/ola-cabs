@@ -1,8 +1,10 @@
 Rails.application.routes.draw do
   resources :bookings
   root 'welcome#index'
+  
   get '/users/new_driver', to: 'users#new_driver', as: 'new_driver'
   get '/users/drivers', to: 'users#drivers', as: 'drivers'
+  post '/users/search_drivers', to: 'users#search_drivers', as: 'search_drivers'
   # resources :users do
   # 	collection do
   # 		#get 'new_driver'

@@ -32,7 +32,6 @@ gem 'jbuilder', '~> 2.5'
 
 #custom gems
 gem 'devise'
-gem 'foundation-rails'
 gem 'bootstrap-sass', '~> 3.3.6'
 gem 'geocoder'
 gem 'react-rails'

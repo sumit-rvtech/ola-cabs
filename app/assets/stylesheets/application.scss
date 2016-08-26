@@ -12,10 +12,8 @@
  *
  *= require_tree .
  *= require_self
- *= require foundation_and_overrides
 
  */
-@import "bootstrap-sprockets";
 @import "bootstrap";
 
 
@@ -84,11 +82,6 @@ a {
     background-color: #003F6E;
     border-radius: 5px 5px 0px 0px;
     clear: both !important;
-}
-ul.nav li {
-    color: #fff;
-    font-size: 15px;
-    list-style-type: none;
 }
 
 ul.nav {
@@ -280,9 +273,6 @@ ul.contact-class li {
     padding: 0;
     width: 100%;
 }
-li {
-    line-height: 18px;
-}
 ul.contact-class li input.button_color {
     background: #ffb600 none repeat scroll 0 0;
     border: 0 none;
@@ -381,7 +371,6 @@ element.style {
     width: 75px;
     background-size: 60px;
 }
-}
 .contact_bott_right .right-cont h5 {
     color: #565656;
     float: left;
@@ -403,14 +392,6 @@ body {
     color: #333333;
     font-size: 13px;
     line-height: 18px;
-}
-.choose_pick {
-    background: #ffb700 none repeat scroll 0 0;
-    box-shadow: 0 0 6px 0 rgba(50, 50, 50, 0.75);
-    float: left;
-    margin: 1% 36% 24px 117px;
-    padding: 17px 20px;
-    width: 830px;
 }
 .choose_pick input {
   border: 1px solid #00dbff;
@@ -510,19 +491,7 @@ body {
     position: absolute;
     top: -100px;
 }
-.choose_pick {
-  background: rgba(255, 255, 255, 0.4) none repeat scroll 0 0 !important;
-  box-shadow: 0 0 6px 0 rgba(50, 50, 50, 0.75) !important;
-  display: flex !important;
-  left: 0 !important;
-  margin: auto !important;
-  padding: 17px 20px !important;
-  position: absolute !important;
-  right: 0 !important;
-  top: 300px !important;
-  width: 940px !important;
-  z-index: 99 !important;
-}
+
 .comp_register h2.com-title{width: 100% !important; padding:0 !important; text-align: center;}
 .comp_register{width: 560px !important;
     margin: 70px 421px !important;}
@@ -774,14 +743,6 @@ a {
     border: 0 none;
     text-decoration: none;
 }
-ul.nav li {
-    color: #fff;
-    font-size: 15px;
-    list-style-type: none;
-}
-li {
-    line-height: 18px;
-}
 /*.register_div {
     float: none !important;
     margin: 100px auto !important;
@@ -985,17 +946,12 @@ ul.footer-soc li {
     padding: 0;
     width: 275px;
 }
-.footer-bottom .call-texi-cont .right-text a {
-    color: #fff;
-}
+
 .color-white {
     color: #ffffff;
 }
 .footer-bottom .call-texi-cont .right-text a:hover {
     text-decoration: underline;
-}
-.footer-bottom .call-texi-cont .right-text a {
-    color: #fff;
 }
 .footer-bottom .call-texi-cont .right-text span {
     color: #ffffff;
@@ -1146,42 +1102,7 @@ form {
 input, textarea {
     transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s;
 }
-input, textarea, select, .uneditable-input {
-    border-radius: 0;
-    color: #8c8c8c;
-    display: inline-block;
-    font-size: 14px;
-    line-height: 18px;
-    margin-bottom: 9px;
-    padding: 6px 5px;
-    width: 210px;
-}
-input, button, select, textarea {
-    font-family: Arial,sans-serif;
-}
-label, input, button, select, textarea {
-    font-size: 13px;
-    font-weight: normal;
-    line-height: 18px;
-}
-button, input {
-    line-height: normal;
-}
-button, input, select, textarea {
-    font-size: 100%;
-    margin: 0;
-    vertical-align: middle;
-}
-input, email, select {
-    border: 1px solid #dadada;
-    padding: 8px 5px 7px;
-}
-input, email, textarea {
-    border: 1px solid #e3e3e3;
-    float: left;
-    padding: 8px;
-    resize: none;
-}
+
 .register_div ul.reg-sign li {
   display: inline-block;
   float: left;
@@ -1214,18 +1135,6 @@ input[type="image"], input[type="checkbox"], input[type="radio"] {
     margin: 53px -78px 77px 189px;
     padding: 10px;
 }
-}
-.float-right {
-    float: right !important;
-}
-.register_div .login_signbtn-cont .login-btn {
-    color: #ffffff;
-    float: left;
-    margin: 0;
-    padding: 7px 37px 5px 13px;
-    text-align: left;
-}
-
 body {
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 12px;
@@ -1414,42 +1323,7 @@ h2 {
 input, textarea {
     transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s;
 }
-input, textarea, select, .uneditable-input {
-    border-radius: 0;
-    color: #8c8c8c;
-    display: inline-block;
-    font-size: 14px;
-    line-height: 18px;
-    margin-bottom: 9px;
-    padding: 6px 5px;
-    width: 210px;
-}
-input, button, select, textarea {
-    font-family: Arial,sans-serif;
-}
-label, input, button, select, textarea {
-    font-size: 13px;
-    font-weight: normal;
-    line-height: 18px;
-}
-button, input {
-    line-height: normal;
-}
-button, input, select, textarea {
-    font-size: 100%;
-    margin: 0;
-    vertical-align: middle;
-}
-input, email, select {
-    border: 1px solid #dadada;
-    padding: 8px 5px 7px;
-}
-input, email, textarea {
-    border: 1px solid #e3e3e3;
-    float: left;
-    padding: 8px;
-    resize: none;
-}
+
 .uneditable-input {
     border-radius: 0;
     color: #8c8c8c;
@@ -1575,8 +1449,8 @@ body {
   padding: 17px 20px !important;
   position: absolute !important;
   right: 0 !important;
-  top: 300px !important;
-  width: 850px !important;
+  top: 290px !important;
+  width: 950px !important;
   z-index: 99 !important;
 }
 .comp_register h2.com-title{/* width: 100% !important; */padding:0 !important;text-align: center;}
@@ -1613,12 +1487,6 @@ body {
    .Header_submit{float: left;
     width: 125px;
    }
-#btnSubmit {
-  background-color: #00e4ff;
-  color: #ffffff;
-  cursor: pointer;
-  width: 100px !important;
-}
    .choose_pick #drpdwn1{margin:0px 10px !important;}
 .top_header {
   background: #0081a9 none repeat scroll 0 0;
@@ -1838,95 +1706,6 @@ ul.nav li {
 li {
     line-height: 18px;
 }
-/*.register_div {
-    float: none !important;
-    margin: 100px auto !important;
-    width: 100% !important;
-}*/
-.rem_signdiv {
-    padding: 20px; background-color: rgb(0, 129, 169);
-}
-.login_mem {
-    padding: 0px 22px;
-    float: left;
-    width: 95%;
-}
-.login_heading h3{margin:20px 0px !important; width: 89% !important;}
-.login_container{width: 250px !important; box-shadow: 1px 0 5px 1px rgba(140, 140, 140, 0.75) !important;}
-.main_internal_contact .interal_div{     float: left !important;
-    margin: 50px auto;}
-.bottom_content {
-    float: left;
-    width: 100%;
-}
-.register_div ul.reg-sign li{width:100%;}
-label, input, button, select, textarea{ float: left;
-    width: 100%;}
-.register_div .login_signbtn-cont{float:left !important; cursor:pointer;}
-.register_div .login_signbtn-cont .login-btn{
-        color: #ffffff !important;
-    float: left !important;
-    margin: 0 !important;
-    padding: 10px !important;
-    text-align: center !important;
-}
-.How_it_work {
-  display: block;
-  margin: 0 auto;
-  width: 100%;
-}
-.how_it_work_mainDiv {
-  float: none;
-  margin: 0 auto;
-  width: 980px;
-}
-.footer {
-  background: #0081a9 none repeat scroll 0 0;
-  float: left;
-  margin: 40px 0 0;
-  min-width: 1160px;
-  padding: 0;
-  width: 100%;
-}
-.footer_container {
-    margin: auto;
-    width: 980px;
-}
-.footer_content {
-    float: left;
-    margin: 30px 0 20px;
-    padding: 0;
-    width: 980px;
-}
-.footer_menu {
-    float: left;
-    margin: 0;
-    padding: 0;
-    width: 220px;
-}
-.footer-title {
-    float: left;
-    margin: 0;
-    padding: 0;
-    width: 205px;
-}
-ul.footer-nav {
-    float: left;
-    margin: 0;
-    padding: 0;
-}
-ul.footer-nav li {
-    background: rgba(0, 0, 0, 0) url("../images/footer-nav-arrow.png") no-repeat scroll 0 7px;
-    display: inline;
-    float: left;
-    list-style-type: none;
-    margin: 0 0 5px;
-    padding: 0 0 0 15px;
-    width: 185px;
-}
-li {
-    line-height: 18px;
-}
 ul.footer-nav li a {
     color: #fff;
     float: left;
@@ -1937,289 +1716,23 @@ ul.footer-nav li a {
 ul.footer-nav li a:hover {
     text-decoration: underline;
 }
-.footer_addrs {
-    float: left;
-    margin: 0;
-    padding: 0;
-    width: 265px;
-}
-.footer_addrs span {
-    color: #fff;
-    float: left;
-    font-size: 13px;
-    margin: 0;
-    padding: 0;
-}
-.footer-title h2 {
-    color: #ffb700;
-    float: left;
-    font-size: 16px;
-    font-weight: 600;
-    margin: 0 0 5px;
-    padding: 0;
-    width: 200px;
-}
-.get-download .btnapp {
-    float: left;
-    margin: 3px 0 8px;
-    padding: 0;
-}
-a img {
-    border: 0 none;
-}
-.footer-soc-content {
-    float: left;
-    margin: 0;
-    padding: 0;
-    width: 200px;
-}
-ul.footer-soc {
-    float: left;
-    margin: 0;
-    padding: 0;
-}
-ul.footer-soc li span {
-    line-height: 20px;
-    margin: 0;
-    padding: 0;
-}
-ul.footer-soc li a {
-    color: #fff;
-    float: left;
-    margin: 0;
-    padding: 0;
-}
-ul.footer-soc li {
-    display: inline;
-    float: left;
-    list-style-type: none;
-    margin: 5px 0 3px;
-    padding: 0;
-    width: 200px;
-}
-.get-download {
-    float: left;
-    margin: 0;
-    padding: 0;
-    width: 275px;
-}
-.footer_divider {
-    float: left;
-    margin: 0;
-    padding: 0;
-}
-.footer-bottom {
-    float: left;
-    margin: 20px 170px;
-    padding: 0;
-    width: 680px;
-}
-.footer-bottom .call-texi-cont {
-    float: left;
-    margin: 0;
-    padding: 0;
-    width: 330px;
-}
-.footer-bottom .call-texi-cont .icon {
-    float: left;
-    margin: 0;
-    padding: 0;
-}
-.footer-bottom .call-texi-cont .right-text {
-    float: right;
-    margin: 0;
-    padding: 0;
-    width: 275px;
-}
-.footer-bottom .call-texi-cont .right-text h2 {
-    color: #ffb700;
-    float: left;
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 20px;
-    margin: 1px 0 5px;
-    padding: 0;
-    width: 275px;
-}
-.footer-bottom .call-texi-cont .right-text a {
-    color: #fff;
-}
+
 .color-white {
     color: #ffffff;
 }
-.footer-bottom .call-texi-cont .right-text a:hover {
-    text-decoration: underline;
-}
+
 .footer-bottom .call-texi-cont .right-text a {
     color: #fff;
 }
-.footer-bottom .call-texi-cont .right-text span {
-    color: #ffffff;
-    float: left;
-    font-size: 20px;
-    font-weight: 500;
-    margin: 0;
-    padding: 0;
-}
-.copy-right-content{clear: both;}
 
-body {
-    color: #333333;
-    font-size: 13px;
-    line-height: 18px;
-  font-family: "Open Sans","sans-serif";
-}
-.login-bg {
-    background: rgba(0, 0, 0, 0) url("../images/login-bg.png") repeat-x scroll 0 bottom;
-    float: left;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-}
 .main_internal_contact .interal_div {
     float: left;
-    
-}
-#choose_pick form {
-    margin: 0 auto !important;
-    width: 78%;
-}
-.page_name {
-    color: #ffffff;
-    font-size: 70px;
-    font-weight: bolder;
-    opacity: 0.24;
-    position: absolute;
-    top: -100px;
-}
-.login_heading h3 {
-  color: #252525;
-  float: left;
-  font-size: 23px;
-  font-weight: 300;
-  margin: 0;
-  padding: 0;
-  text-align: left;
-  width: 100%;
 }
 h3 {
     font-size: 18px;
     line-height: 27px;
 }
-.register_div {
-    float: left;
-}
-.login_container {
-    background: #FFFAFA none repeat scroll 0 0;
-    box-shadow: 1px 0 5px -2px rgba(140, 140, 140, 0.75);
-    float: left; padding-bottom:10px;
-    margin: 0 auto;
-    border: 1px solid #F5EFEF;
-     
-    box-shadow: none !important;
-    width: 100% !important;
-    /* margin: 0 auto; */
-}
 
-.btn2 {
-  background: rgb(255, 184, 3) none repeat scroll 0 0;
-  color: #fff;
-  font-size: 19px;
-  margin-left: 10px;
-  margin-top: 11px;
-  padding: 8px;
-}
-span.field-validation-error.text-danger {
-    position: absolute;
-    left: 9px;
-    bottom: -16px;
-}
-.header_login_detail{position:relative;width:53%;}
-
-
-.deshb ul {list-style:none; 
-}
-
-.deshb ul li {list-style:none;
-}
-
-.deshb ul ul{display:none;}
-.deshb ul li:hover ul{display:block;}
-
-
-.dash-menu ul { 
-}
-
-h6:hover ul {display:block;
-}
-
-
-
-.regis1 input
- {width:200px !important;}
-
-.regis1 li {
-width:200px !important;}
-
-.login_mem_left h3{margin:0px !important;}
-
-.rem_signdiv span {margin-left:10px; color:#fff;
-}
-
-.btn1{padding:8px; font-size:19px; margin-top:22px; background:rgb(255, 184, 3); color:#fff;}
-
-.login_mem_left {
-    float: left;
-    width: 300px;
-}
-.login_mem_right{float:right;}
-
-
-.register_div label{width:180px; float:left; line-height:22px; font-weight:bold; color:#fff;}
-
-.register_div ul.reg-sign li{width:300px !important; position:relative;}
-
-.register_div input[type="text"], .register_div input[type="password"]  {padding: 13px !important;
-    resize: none;
-    width: 290px !important;
-}
-
-form {
-    margin: 0 0 18px;
-}
-.register_div ul.reg-sign {
-  float: left;
-  width: 100%;
-}
-.register_div ul.reg-sign li .input-text {
-   
-    color: #565656;
-    float: left;
-    margin: 0;
-    padding: 10px;
-    width: 210px;
-}
-input, textarea {
-    transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s;
-}
-input, textarea, select, .uneditable-input {
-    border-radius: 0;
-    color: #8c8c8c;
-    display: inline-block;
-    font-size: 14px;
-    line-height: 18px;
-    margin-bottom: 9px;
-    padding: 6px 5px;
-    width: 210px;
-}
-input, button, select, textarea {
-    font-family: Arial,sans-serif;
-}
-label, input, button, select, textarea {
-    font-size: 13px;
-    font-weight: normal;
-    line-height: 18px;
-}
 button, input {
     line-height: normal;
 }
@@ -2232,45 +1745,7 @@ input, email, select {
     border: 1px solid #dadada;
     padding: 8px 5px 7px;
 }
-input, email, textarea {
-    border: 1px solid #e3e3e3;
-    float: left;
-    padding: 8px;
-    resize: none;
-}
-.register_div ul.reg-sign li {
-  display: inline-block;
-  float: left;
-  list-style-type: none;
-  padding: 26px 5px 5px 0;
-}
-li {
-    line-height: 18px;
-}
-input[type="image"], input[type="checkbox"], input[type="radio"] {
-    border-radius: 0;
-    cursor: pointer;
-    height: auto;
-    line-height: normal;
-    margin: 3px 0;
-    padding: 0;
-    width: auto;
-}
-.register_div .login_signbtn-cont {
-    float: right;
-    margin: 20px 20px 20px;
-    padding: 0;
-}
 
-   .login-btn {
-    background: #252525 url("../images/black-btn-bg.jpg") no-repeat scroll right center;
-    border: 1px solid #1c1c1c;
-    border-radius: 4px;
-    color: white;
-    margin: 53px -78px 77px 189px;
-    padding: 10px;
-}
-}
 .float-right {
     float: right !important;
 }
@@ -2282,15 +1757,6 @@ input[type="image"], input[type="checkbox"], input[type="radio"] {
     text-align: left;
 }
 
-.comp_register label {
-    color: #fff;
-    float: left;
-    font-size: 13px;
-    line-height: 20px;
-    margin: 18px 0;
-    padding: 0;
-    width: 26%;
-}
 tbody {
     display: table-row-group;
     vertical-align: middle;
@@ -2320,13 +1786,6 @@ tr {
     text-align: left;
 }
 
-input, email, textarea {
-    border: 1px solid #e3e3e3;
-    float: left;
-    padding: 8px;
-    resize: none;
-}
-
 tbody tr:nth-child(even) {
   background: rgb(0, 129, 169) none repeat scroll 0 0;
 }
@@ -2338,4 +1797,9 @@ tbody{
 td, th {
     display: table-cell;
     vertical-align: inherit;
+}
+
+input[type="submit"]:disabled {
+    cursor: default;
+    pointer-events: none;    
 }
