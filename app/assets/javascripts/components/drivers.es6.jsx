@@ -14,12 +14,18 @@ class Drivers extends React.Component {
 			role: "driver"
 		}
 		this.addRecord = this.addDriver.bind(this);
-		this.handleHire = this.addDriver.bind(this);
+		this.handleHire = this.handleHire.bind(this);
 	}
 
 	componentWillMount () {
 		var drivers = this.props.drivers;
-		this.state = {drivers: drivers};
+		var bookings = this.props.booking_data;
+		this.state = {drivers: drivers,bookings: bookings};
+	}
+
+	handleHire (record){
+		var booking_data;
+		return booking_data = this.props.booking_data;
 	}
 
 	addDriver (driver) {
@@ -33,9 +39,11 @@ class Drivers extends React.Component {
 
 	render () {
 		var drivers;
+		var booking_data = this.props.booking_data;
+		window.temp_var = {"bookings": booking_data}
 		if(this.props.drivers.length){
 			drivers= this.props.drivers.map(function(driver) {
-				return <Driver key={driver.id} driver={driver} handleNewHire ={this.handleHire} />;
+				return <Driver key={driver.id} driver={driver} handleNewHire ={window.temp_var.bookings} />;
 			});
 		}
 		else{

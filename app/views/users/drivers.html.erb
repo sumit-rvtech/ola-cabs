@@ -1,1 +1,5 @@
-<%= react_component 'Drivers', { drivers: @drivers, cab_type: Constants::CAB_TYPE.collect{|key,value| [value,key]} } %>
+<% unless @booking_data %>
+	<%= react_component 'Drivers', { drivers: @drivers, cab_type: Constants::CAB_TYPE.collect{|key,value| [value,key]} } %>
+<% else %>
+	<%= react_component 'Drivers', { drivers: @drivers, cab_type: Constants::CAB_TYPE.collect{|key,value| [value,key]}, booking_data: @booking_data } %>
+<% end %>

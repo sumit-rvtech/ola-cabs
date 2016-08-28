@@ -1,18 +1,6 @@
 class Driver extends React.Component {
 	constructor (props) {
 	    super (props);
-	    this.state = {
-	    	first_name: "",
-			last_name: "",
-			email: "",
-			password: "",
-			password_confirmation: "",
-			address: "",
-			mobile: "",
-			cab_type: "",
-			vehicle_number: "",
-			role: "driver"
-    	}
 		this.handleHire = this.props.handleHire.bind(this);
   	}
 

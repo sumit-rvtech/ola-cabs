@@ -34,7 +34,8 @@ class SearchDriver extends React.Component {
 			cache: false,
 			data: {search: this.state},
 			success: function (data, success, xhr) {
-				window.location.href = data.redirect_url + "?drivers="+ data.drivers+"&data="+this.state;
+				actual_data = {source: this.state.source, destination: this.state.destination, cab_type: this.state.cab_type, persons: this.state.persons}
+				window.location.href = data.redirect_url + "?drivers="+ data.drivers+"&data="+JSON.stringify(actual_data);
 			}.bind(this),
 
 			error: function(response, status, err) {

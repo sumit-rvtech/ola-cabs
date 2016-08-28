@@ -7,6 +7,7 @@ class UsersController < ApplicationController
 	def drivers
 		if params.has_key?(:drivers)
 			@drivers = User.drivers.where(id: params[:drivers])
+			@booking_data = JSON.parse(params[:data])
 		else
 			@drivers = User.drivers
 		end
@@ -17,7 +18,7 @@ class UsersController < ApplicationController
 	end
 
 	def search_drivers
-		@drivers = Location.near(params[:search][:source],5).latest.collect{|u| u.user }
+		@drivers = Location.near(params[:search][:source],5).collect{|u| u.user }
 		respond_to do |format|
 			format.html
 			format.json { render json: { drivers: @drivers.collect(&:id),"redirect":true,"redirect_url": drivers_path }}
